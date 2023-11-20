@@ -1,0 +1,439 @@
+/* App.css */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ overflow: hidden;
+}
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow-x: hidden
+}
+
+.header {
+  margin-top: -8px;
+  margin-left: -9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(38, 32, 32);
+  color: rgb(219, 207, 207);
+  text-align: center;
+  padding: 5px;
+  height: 70px;
+  width: 100vw; /* Set the width to 100% */
+}
+
+
+
+
+
+
+
+.spacer {
+  flex-grow: 1;
+}
+
+.title {
+  margin-right: 550px;
+}
+
+.cover-photo {
+  height: 200px;
+  width: 101vw;
+  margin-left: -8px;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon-container svg {
+  margin-right: 5px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-top: -50px;
+  margin-left: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.posts-container {
+  margin-top: 20px;
+  border-left: none;
+  border-right: none;
+  opacity: 1p;
+  border-radius: 8px;
+  position: relative;
+}
+
+.p{
+  position: absolute;
+  border: 1px solid rgb(176, 64, 64);
+  z-index: 1;
+  margin-top: -8px;
+  height: 30px;
+  border-left: none;
+  border-bottom: none;
+  background-color: rgb(142, 124, 124);
+  width: 115px;
+  
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.post {
+  position: relative;
+  width: 100vw;
+  background-color: #ffbfbf;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgb(255, 122, 122) ;
+}
+
+.mystery{
+  height: 30px;
+  width: 100vw;
+  background-color: #35DFFB;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.like-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #020202;
+  border-radius: 50%;
+  padding: 10px;
+  color: rgb(71, 245, 7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.bio {
+  margin-top: -10px;
+  text-align: left;
+  font-size: 16px;
+  color: #555;
+  font-weight: 900;
+}
+
+.profile-info {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.icon-container {
+  display: flex;
+}
+
+.icon-container .fa-icon {
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.followers-info {
+  text-align: left;
+}
+.instagram-link {
+  margin-top: 10px;
+  margin-right: 1000px;
+  text-decoration: none;
+}
+
+/* Media query for screens up to 768px */
+@media screen and (max-width: 768px) {
+ 
+  .title {
+    margin-right: 0;
+  }
+
+  .cover-photo {
+    width: 100vw;
+
+  }
+
+  .profile-picture {
+    margin-left: 0;
+  }
+
+  .followers-container {
+    margin-left: 0;
+  }
+
+  .followers-box,
+  .following-box,
+  .box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+
+  .instagram-link {
+    margin-right: 0;
+  }
+}
+
+/* Additional adjustments for smaller screens */
+@media screen and (max-width: 576px) {
+  /* .logo img {
+    width: 100%;
+  } */
+
+  .header {
+    padding: 10px;
+    height: auto;
+  }
+
+  .icon-container {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  .icon-container svg {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+
+
+  .followers-container {
+    margin-left: 0;
+  }
+
+  .followers-box,
+  .following-box,
+  .box {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .posts-container {
+    margin-top: 10px;
+  }
+
+  .like-icon {
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+  }
+
+  .posts {
+    padding: 10px;
+  }
+
+  .post {
+    padding: 10px;
+  }
+}
+
+.myhead{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ! My changes */
+@media screen and (max-width: 575px) {
+  .myhead {
+  display: flex;
+  flex-direction: row;
+
+  }
+  .p{
+  height: 20px;
+  background-color: white;
+  z-index: 1;
+  width: 120px;
+
+  }
+}
+
+.btn{
+  background: #fcc43c;
+  height: 45px;
+  width: 100px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.first{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.myicon{
+  height: 40px;
+  width: 40px;
+
+}
+
+.myline{
+  height: 45px;
+  width: 1px;
+  background:#fcc43c;
+
+}
+.mylogo, .myline, .sto{
+  margin-right: 8px;
+}
+.sto{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.myinfodiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.btnval{
+  height: 37px;
+  width: 75px;
+  border-radius: 10px;
+  border: 1.5px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+  margin-right: 13px;
+  opacity: 0.8;
+}
+.myname{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* font-weight: bolder; */
+}
+
+.mydowntxt{
+  display: flex;
+  justify-content: row;
+  color: gray;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+
+.followers{
+  margin-left: 8px;
+  margin-right:25px;
+}
+
+.user-info{
+  position: relative;
+  /* width: 200px; */
+  height: 200px;
+  /* background-color: #ccc; */
+}
+.myinfodiv{
+  margin-left: 18rem;
+  position: absolute;
+  top: 65px;
+}
+
+.diamond, .tick {
+  height: 20px;
+  width: 20px;
+  margin-top: 2px;
+
+} 
+
+.mainbio{
+  margin-left: 5.5rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.founder{
+  color: gray;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.link{
+  font-size: 20px;
+  color:#35DFFB;
+  margin-bottom: 15px;
+
+}
+
+.rating{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.gap{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .myinfodiv{
+    margin-left: 12rem;
+  }
+}
+
+
+.post-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.th{
+  color: #35DFFB;
+}
+
